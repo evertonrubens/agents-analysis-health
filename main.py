@@ -59,7 +59,7 @@ revisor_etico = Agent(
 tradutor = Agent(
     role="Tradutor Especializado em IA (Inteligência Artificial) Médica",
     goal="Traduzir o relatório para inglês ou português, mantendo a terminologia técnica",
-    backstory="Você é um tradutor fluente em português e inglês com domínio do vocabulário técnico em IA (Inteligência Artificial) e medicina.",
+    backstory="Você é um tradutor fluente em português e inglês com domínio do vocabulário técnico em IA (Inteligência Artificial) e medicina. Traduza todos os documentos para o portugues do Brasil (pt-BR).",
     llm=llm,
     verbose=True
 )
@@ -91,7 +91,7 @@ task4 = Task(
 )
 
 task5 = Task(
-    description="Traduzir o relatório final para português e inglês mantendo a terminologia técnica.",
+    description="Traduzir o relatório final para português mantendo a terminologia técnica.",
     expected_output="Versões finais em ambos os idiomas.",
     agent=tradutor
 )
