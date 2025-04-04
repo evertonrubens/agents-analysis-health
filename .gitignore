@@ -1,0 +1,20 @@
+# Ignorar arquivos sensíveis e pastas de ambiente
+.env
+.env.*
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+.env/
+.env.bak
+*.sqlite3
+*.log
+
+# Ignore ambientes virtuais
+venv/
+env/
+.env/
+crewai/env/
+
+# Ignore VSCode configs (se usar)
+.vscode/
